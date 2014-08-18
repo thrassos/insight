@@ -46,7 +46,7 @@
     "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api"
   },
   "dependencies": {
-    "insight-bitcore-api": "git://github.com/project-bitmark/insight-api.git"
+    "insight-bitcore-api": "git://github.com/thrassos/insight-api.git#7a94f24f960c265a8a61448c6cd683d1cee3e400"
   },
   "devDependencies": {
     "bower": "~1.2.8",
