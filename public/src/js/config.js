@@ -5,7 +5,7 @@ angular.module('insight').config(function($routeProvider) {
   $routeProvider.
     when('/block/:blockHash', {
       templateUrl: '/views/block.html',
-      title: 'DigiByte Block '
+      title: 'Solarcoin Block '
     }).
     when('/block-index/:blockHeight', {
       controller: 'BlocksController',
@@ -13,7 +13,7 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/tx/:txId/:v_type?/:v_index?', {
       templateUrl: '/views/transaction.html',
-      title: 'DigiByte Transaction '
+      title: 'Solarcoin Transaction '
     }).
     when('/', {
       templateUrl: '/views/index.html',
@@ -21,15 +21,15 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/blocks', {
       templateUrl: '/views/block_list.html',
-      title: 'DigiByte Blocks solved Today'
+      title: 'Solarcoin Blocks solved Today'
     }).
     when('/blocks-date/:blockDate/:startTimestamp?', {
       templateUrl: '/views/block_list.html',
-      title: 'DigiByte Blocks solved '
+      title: 'Solarcoin Blocks solved '
     }).
     when('/address/:addrStr', {
       templateUrl: '/views/address.html',
-      title: 'DigiByte Address '
+      title: 'Solarcoin Address '
     }).
     when('/status', {
       templateUrl: '/views/status.html',

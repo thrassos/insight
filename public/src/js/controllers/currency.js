@@ -19,7 +19,7 @@ angular.module('insight.currency').controller('CurrencyController',
 
         if (this.symbol === 'USD') {
           response = _roundFloat((value * this.factor), 2);
-        } else if (this.symbol === 'mDGB') {
+        } else if (this.symbol === 'mSLR') {
           this.factor = 1000;
           response = _roundFloat((value * this.factor), 5);
         } else {
@@ -42,7 +42,7 @@ angular.module('insight.currency').controller('CurrencyController',
         Currency.get({}, function(res) {
           $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp;
         });
-      } else if (currency === 'mDGB') {
+      } else if (currency === 'mSLR') {
         $rootScope.currency.factor = 1000;
       } else {
         $rootScope.currency.factor = 1;
